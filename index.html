@@ -9,6 +9,7 @@
   rel="stylesheet"
   href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 />  <link rel="stylesheet" href="assets/style.css">
+
   <title>Project Tracker</title>
 </head>
 <body>
@@ -29,11 +30,11 @@
           <li class="list-group-item">Due Date</li>
           <li class="list-group-item">Hourly Rate</li>
         </ul>
-        <button class="btn btn-primary m-2 w-100" id="addProjectBtn">Add Project</button>
+        <button class="btn btn-primary m-2 w-100" id="addProjectBtn" data-toggle="modal" data-target="#modalForm">Add Project</button>
       </div>
     </div>
 
-    <div class="modal" tabindex="-1">
+    <div class="modal" id="modalForm" tabindex="-1">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -43,7 +44,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <p>Modal body text goes here.</p>
+            <p>Put in project info here:</p>
             <form>
               <div class="form-group">
                 <label for="projectName">Project Name: </label>
@@ -51,7 +52,6 @@
               </div>
               <div class="form-group">
                 <label for="projectType">Project Type: </label>
-                <input type="text" name="projectType" id="projectType">
                 <select name="projectType" id="projectType">
                   <option value="webAppFront">Web Application (Front End)</option>
                   <option value="webAppBack">Web Application (Back End)</option>
@@ -78,7 +78,8 @@
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js" integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  <script
   type="text/javascript"
   src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
 ></script>  <script src="assets/script.js"></script>
