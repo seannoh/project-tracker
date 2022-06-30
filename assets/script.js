@@ -10,3 +10,6 @@ function displayCurrTime() {
 
 displayCurrTime();
 
+$( function() {
+  $( "#datepicker" ).datepicker({ minDate: -20 });
+} );
